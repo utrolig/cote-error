@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "command-responder": "ts-node ./src/command-responder.ts",
+    "query-responder": "ts-node ./src/query-responder.ts",
+    "start": "concurrently yarn:query-responder yarn:command-responder yarn:web",
+    "web": "ts-node ./src/web.ts"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.6",
+    "@types/cote": "^0.19.0",
+    "@types/express": "^4.17.6",
+    "@types/morgan": "^1.9.0",
+    "@types/node": "^14.0.5",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "cote": "^1.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  },
+  "name": "cote-error",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
